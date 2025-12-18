@@ -5,98 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swim Warriors | Lessons & Shop</title>
   <meta name="description" content="Swim Warriors offers swim lessons in Dawsonville, GA and official merchandise online. Join lessons or shop gear today.">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f8fb;
-      color: #222;
-      line-height: 1.6;
-    }
-    header {
-      background: url('https://www.instagram.com/p/CsBvQKXjWqJ/media/?size=l') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 5rem 1rem;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-    }
-    .btn {
-      background: #0077b6;
-      color: white;
-      padding: 0.9rem 2rem;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      margin: 0.5rem;
-      display: inline-block;
-    }
-    section {
-      padding: 3rem 1.5rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .grid {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    .card {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-    }
-    .gallery {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    iframe {
-      width: 100%;
-      border: none;
-      border-radius: 8px;
-    }
-    footer {
-      background: #0077b6;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-    }
-    footer a {
-      color: #ffdd00;
-      text-decoration: none;
-      margin: 0 0.5rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+<header role="banner">
   <h1>Swim Warriors</h1>
   <p>Learn to swim safely in Dawsonville, GA | Join our classes or shop gear online</p>
   <a href="#lessons" class="btn">View Lessons</a>
   <a href="#shop" class="btn">Visit Shop</a>
 </header>
+ 
+<main id="main" role="main">
 
-<section id="lessons">
+<section id="lessons" role="region" aria-labelledby="lessons-heading">
   <h2>Swim Lessons & Programs</h2>
   <p style="text-align:center; max-width:850px; margin:auto;">
     Swim Warriors provides year-round swim lessons in Dawsonville, GA. Our certified instructors teach survival swimming, stroke technique, and water safety for all ages. Join our classes today and gain confidence in the water.
@@ -117,58 +41,75 @@
   </div>
 </section>
 
-<section id="gallery">
-  <h2>Gallery from Instagram</h2>
+<section id="gallery" role="region" aria-labelledby="gallery-heading">
+  <h2 id="gallery-heading">Gallery from Our Classes</h2>
   <div class="gallery">
-    <!-- Replace these src with actual public Instagram images -->
-    <img src="https://www.instagram.com/p/CsBvQKXjWqJ/media/?size=l" alt="Swim Class 1">
-    <img src="https://www.instagram.com/p/CpX9TfMjl5P/media/?size=l" alt="Swim Class 2">
-    <img src="https://www.instagram.com/p/CpX9UhtjlsL/media/?size=l" alt="Swim Class 3">
-    <img src="https://www.instagram.com/p/CpX9V7mjl5N/media/?size=l" alt="Swim Class 4">
+    <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=1200&q=80" alt="Children swimming">
+    <img src="https://images.unsplash.com/photo-1526403224744-9f4f3d3d8f13?auto=format&fit=crop&w=1200&q=80" alt="Swim lessons">
+    <img src="https://images.unsplash.com/photo-1508182312260-0a48f8f5a8b7?auto=format&fit=crop&w=1200&q=80" alt="Instructor with swimmer">
+    <img src="https://images.unsplash.com/photo-1529257414773-1963f5b2f6a6?auto=format&fit=crop&w=1200&q=80" alt="Swimming pool community">
   </div>
 </section>
 
-<section id="shop">
-  <h2>Shop Official Merchandise</h2>
+<section id="shop" role="region" aria-labelledby="shop-heading">
+  <h2 id="shop-heading">Shop Official Merchandise</h2>
   <p style="text-align:center;">Click on a product to purchase directly from our online store.</p>
   <div class="grid">
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1526403224744-9f4f3d3d8f13?auto=format&fit=crop&w=800&q=60" alt="Swim Cap">
       <h3>Swim Cap</h3>
-      <a href="https://www.swimwarriorsshop.com/product/swim-cap" target="_blank">
-        <img src="https://www.instagram.com/p/CpZlS8MjQfL/media/?size=l" alt="Swim Cap">
-      </a>
+      <p>$12.99</p>
+      <a href="https://www.swimwarriorsshop.com/product/swim-cap" target="_blank" rel="noopener noreferrer" class="btn">Buy Now</a>
     </div>
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1508182312260-0a48f8f5a8b7?auto=format&fit=crop&w=800&q=60" alt="T-Shirt">
       <h3>T-Shirt</h3>
-      <a href="https://www.swimwarriorsshop.com/product/swim-shirt" target="_blank">
-        <img src="https://www.instagram.com/p/CpZlT7MjQfM/media/?size=l" alt="Swim T-Shirt">
-      </a>
+      <p>$19.99</p>
+      <a href="https://www.swimwarriorsshop.com/product/swim-shirt" target="_blank" rel="noopener noreferrer" class="btn">Buy Now</a>
     </div>
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=60" alt="Swim Goggles">
       <h3>Swim Goggles</h3>
-      <a href="https://www.swimwarriorsshop.com/product/goggles" target="_blank">
-        <img src="https://www.instagram.com/p/CpZlU6MjQfN/media/?size=l" alt="Swim Goggles">
-      </a>
+      <p>$14.99</p>
+      <a href="https://www.swimwarriorsshop.com/product/goggles" target="_blank" rel="noopener noreferrer" class="btn">Buy Now</a>
     </div>
   </div>
 </section>
 
-<section id="location">
-  <h2>Our Dawsonville Location</h2>
+<section id="location" role="region" aria-labelledby="location-heading">
+  <h2 id="location-heading">Our Dawsonville Location</h2>
   <p style="text-align:center;">Visit our indoor swim facility in Dawsonville, GA for year-round classes and programs.</p>
   <iframe src="https://www.google.com/maps?q=Dawsonville,+GA+indoor+swim+facility&output=embed" height="400"></iframe>
 </section>
 
-<section style="text-align:center;">
-  <h2>Contact & Registration</h2>
-  <p>Email: <a href="mailto:info@swimwarriors.com">info@swimwarriors.com</a> | Phone: (706) 123-4567</p>
-  <a href="#lessons" class="btn">Register for Lessons</a>
-  <a href="#shop" class="btn">Shop Gear</a>
-</section>
+<section id="contact" class="contact-section" role="region" aria-labelledby="contact-heading">
+  <h2 id="contact-heading">Contact & Registration</h2>
+  <p style="text-align:center;">Email: <a href="mailto:info@swimwarriors.com">info@swimwarriors.com</a> | Phone: (706) 123-4567</p>
+  <div class="contact-grid">
+    <form action="https://formspree.io/f/your_form_id" method="POST" class="contact-form" aria-label="Contact form">
+      <label for="name">Name</label>
+      <input id="name" name="name" required>
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <input type="hidden" name="_subject" value="New message from Swim Warriors site">
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div class="contact-cta">
+      <p>Prefer to register directly? Click below:</p>
+      <a href="#lessons" class="btn">Register for Lessons</a>
+      <a href="#shop" class="btn">Shop Gear</a>
+    </div>
+  </div>
+  </div>
 
-<footer>
-  <p>© 2025 Swim Warriors | <a href="#location">Location</a> | <a href="#contact">Contact</a></p>
+</main>
+
+<footer role="contentinfo">
+  <p>© 2025 Swim Warriors | <a href="#location">Location</a> | <a href="#contact">Contact</a> | <a href="https://www.instagram.com/swimwarriors/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
 </footer>
 
+<script src="scripts.js"></script>
 </body>
 </html>
