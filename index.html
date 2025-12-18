@@ -1,34 +1,10 @@
-# swimwarriors
-
-This repository now contains a simple static website served from the `docs/` directory and a GitHub Actions workflow that deploys `docs/` to GitHub Pages on pushes to `main`.
-
-## How to preview locally
-
-- Open `docs/index.html` directly in your browser to preview the site locally.
-- Or run a simple local server (Python):
-
-  ```bash
-  python3 -m http.server --directory docs 8000
-  # Open http://localhost:8000
-  ```
-
-## Deployment
-
-- The workflow `.github/workflows/pages.yml` publishes the `docs/` folder to GitHub Pages automatically when you push to `main`.
-- If you prefer a custom domain, add a `CNAME` file in `docs/` and configure the domain in your GitHub Pages settings.
-
-## Next steps
-
-- If you'd like, I can create a development branch and open a PR with these changes, or commit directly to `main` and trigger the deployment. Which do you prefer?
-
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swim Warriors | Lessons & Shop</title>
-  <meta name="description" content="Swim Warriors provides swim lessons in Dawsonville, GA and offers merchandise online. Join lessons or shop our gear today.">
+  <meta name="description" content="Swim Warriors offers swim lessons in Dawsonville, GA and official merchandise online. Join lessons or shop gear today.">
   <style>
     body {
       margin: 0;
@@ -38,7 +14,7 @@ This repository now contains a simple static website served from the `docs/` dir
       line-height: 1.6;
     }
     header {
-      background: url('https://instagram.fatl1-1.fna.fbcdn.net/v/t51.2885-15/330901403_1234567890_n.jpg') center/cover no-repeat;
+      background: url('https://www.instagram.com/p/CsBvQKXjWqJ/media/?size=l') center/cover no-repeat;
       color: white;
       text-align: center;
       padding: 5rem 1rem;
@@ -142,36 +118,36 @@ This repository now contains a simple static website served from the `docs/` dir
 </section>
 
 <section id="gallery">
-  <h2>Photos From Our Classes</h2>
+  <h2>Gallery from Instagram</h2>
   <div class="gallery">
-    <!-- Replace these src links with actual Instagram images from public posts -->
-    <img src="https://instagram.fatl1-1.fna.fbcdn.net/v/t51.2885-15/330901403_1234567890_n.jpg" alt="Swim class 1">
-    <img src="https://instagram.fatl1-1.fna.fbcdn.net/v/t51.2885-15/331234567_1234567891_n.jpg" alt="Swim class 2">
-    <img src="https://instagram.fatl1-1.fna.fbcdn.net/v/t51.2885-15/331345678_1234567892_n.jpg" alt="Swim class 3">
-    <img src="https://instagram.fatl1-1.fna.fbcdn.net/v/t51.2885-15/331456789_1234567893_n.jpg" alt="Swim class 4">
+    <!-- Replace these src with actual public Instagram images -->
+    <img src="https://www.instagram.com/p/CsBvQKXjWqJ/media/?size=l" alt="Swim Class 1">
+    <img src="https://www.instagram.com/p/CpX9TfMjl5P/media/?size=l" alt="Swim Class 2">
+    <img src="https://www.instagram.com/p/CpX9UhtjlsL/media/?size=l" alt="Swim Class 3">
+    <img src="https://www.instagram.com/p/CpX9V7mjl5N/media/?size=l" alt="Swim Class 4">
   </div>
 </section>
 
 <section id="shop">
-  <h2>Shop Our Gear</h2>
-  <p style="text-align:center;">Check out our official Swim Warriors merchandise. Click any item to purchase directly from our online store.</p>
+  <h2>Shop Official Merchandise</h2>
+  <p style="text-align:center;">Click on a product to purchase directly from our online store.</p>
   <div class="grid">
     <div class="card">
       <h3>Swim Cap</h3>
       <a href="https://www.swimwarriorsshop.com/product/swim-cap" target="_blank">
-        <img src="https://instagram.fatl1-1.fna.fbcdn.net/v/t51.2885-15/332234567_1234567894_n.jpg" alt="Swim Cap">
+        <img src="https://www.instagram.com/p/CpZlS8MjQfL/media/?size=l" alt="Swim Cap">
       </a>
     </div>
     <div class="card">
       <h3>T-Shirt</h3>
       <a href="https://www.swimwarriorsshop.com/product/swim-shirt" target="_blank">
-        <img src="https://instagram.fatl1-1.fna.fbcdn.net/v/t51.2885-15/332345678_1234567895_n.jpg" alt="Swim T-Shirt">
+        <img src="https://www.instagram.com/p/CpZlT7MjQfM/media/?size=l" alt="Swim T-Shirt">
       </a>
     </div>
     <div class="card">
       <h3>Swim Goggles</h3>
       <a href="https://www.swimwarriorsshop.com/product/goggles" target="_blank">
-        <img src="https://instagram.fatl1-1.fna.fbcdn.net/v/t51.2885-15/332456789_1234567896_n.jpg" alt="Swim Goggles">
+        <img src="https://www.instagram.com/p/CpZlU6MjQfN/media/?size=l" alt="Swim Goggles">
       </a>
     </div>
   </div>
@@ -191,9 +167,8 @@ This repository now contains a simple static website served from the `docs/` dir
 </section>
 
 <footer>
-  <p>© 2025 Swim Warriors | <a href="#location">Our Location</a> | <a href="#contact">Contact</a></p>
+  <p>© 2025 Swim Warriors | <a href="#location">Location</a> | <a href="#contact">Contact</a></p>
 </footer>
 
 </body>
 </html>
-
